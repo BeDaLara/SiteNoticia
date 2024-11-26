@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Acompanhe as últimas notícias esportivas, análises e destaques do mundo do esporte.">
+    <meta name="author" content="News Flash">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Flash - Esportes">
+    <meta property="og:description" content="O portal de notícias que oferece cobertura completa sobre o mundo dos esportes, com notícias, análises e destaques.">
+    <meta property="og:image" content="images/logo.png">
+    <title>News Flash - Esportes</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+        <style>
+           .container-escudos {
+  display: grid;
+  grid-template-columns: 1fr 300px; /* Grid com 2 colunas: uma para a grade e outra para vídeos */
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 colunas */
+  grid-template-rows: repeat(3, 1fr); /* 3 linhas com altura flexível */
+  gap: 20px; /* Espaço entre as imagens */
+  max-width: 1000px; /* Largura limitada */
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz com que a imagem cubra completamente o espaço */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1; /* Proporção quadrada para as imagens */
+}
+
+.grid-item:hover img {
+  transform: scale(1.2);
+}
+
+.grid-container:hover .grid-item img {
+  filter: blur(5px);
+}
+
+.grid-container:hover .grid-item:hover img {
+  filter: none;
+}
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+video {
+  border-radius: 10px;
+}
+        </style>
+   
+</head>
+
+<body>
+    <!-- Navbar -->
+        <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar &times;</button>
+    <a href="#" class="w3-bar-item w3-button">Tecnologia</a>
+    <a href="#" class="w3-bar-item w3-button">Nacional</a>
+    <a href="#" class="w3-bar-item w3-button">Internacional</a>
+    <a href="#" class="w3-bar-item w3-button">Economia</a>
+    <a href="#" class="w3-bar-item w3-button">Entretenimento</a>
+    <a href="#" class="w3-bar-item w3-button">Esportes</a>
+    <a href="#" class="w3-bar-item w3-button">Educação</a>
+  </div>
+  
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="w3-black">
+                <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
+              </div>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" class="navbar-logo" />
+            </a>
+            
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="politica.html">Política</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="economia.html">Economia</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="esportes.html">Esportes</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pop.html">Pop</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ 
+
+    <!-- Hero Section -->
+    <div class="card-container">
+      <div class="card large-card">
+        <div class="card-image">
+          <img src="images/esporte1.webp" alt="Imagem 1">
+          <div class="card-caption">Brasil x Uruguai: veja escalações do jogo das Eliminatórias</div>
+        </div>
+      </div>
+      <div class="small-cards">
+        <div class="card small-card">
+          <div class="card-image">
+            <img src="images/esporte2.webp" alt="Imagem 2">
+            <div class="card-caption">O adeus de Rafael Nadal: Espanha deixa Copa Davis, e lenda do tênis se aposenta</div>
+          </div>
+        </div>
+        <div class="card small-card">
+          <div class="card-image">
+            <img src="images/esporte3.webp" alt="Imagem 3">
+            <div class="card-caption">“Neymar deveria ter ganhado 5 Bolas de Ouro”, diz campeão da Copa do Mundo</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <!-- Tabela de Campeonatos de Futebol Ativos -->
+    <h1>Resultados dos Jogos de Futebol</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Time 1</th>
+                <th>Placar</th>
+                <th>Time 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>25/11/2024</td>
+                <td>16:00</td>
+                <td><img src="images/escudos/Logo_Flamengo_crest_1980-2018.png" alt="Flamengo"></td>
+                <td>3 - 1</td>
+                <td><img src="images/escudos/Palmeiras_logo.svg.png" alt="Palmeiras"></td>
+               
+            </tr>
+            <tr>
+                <td>25/11/2024</td>
+                <td>18:30</td>
+                <td><img src="images/escudos/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" alt="São Paulo" ></td>
+                <td>2 - 2</td>
+                <td><img src="images/escudos/corinthians.png" alt="Corinthians" ></td>
+                
+            </tr>
+            <tr>
+                <td>26/11/2024</td>
+                <td>20:00</td>
+                <td><img src="images/escudos/Gremio_logo.svg.png" alt="Gremio" ></td>
+                <td>1 - 0</td>
+                <td><img src="images/escudos/Escudo_do_Sport_Club_Internacional.svg.png" alt="Internacional" ></td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="columns-container">
+      <!-- Primeira coluna - Notícias de Destaque -->
+      <div class="column">
+        <h2>Notícias de Destaque</h2>
+        <div class="image-container">
+          <a href="/siteseconomia/site4.html"><img src="images/celular.png" alt="Notícias de Destaque"></a>
+          <a href="/siteseconomia/site4.html"><div class="image-caption">Governo determina suspensão de publicidade de bets para crianças</div></a>
+        </div>
+      </div>
+    
+      <!-- Segunda coluna - +Economia -->
+      <div class="column">
+        <h2>+Economia</h2>
+        <div class="image-container">
+          <a href="/siteseconomia/site5.html"><img src="images/cami.png" alt="+Economia"></a>
+          <a href="/siteseconomia/site5.html"><div class="image-caption">Entre as 10 melhores rodovias do país, 9 são concedidas à iniciativa privada, diz CNT</div></a>
+        </div>
+      </div>
+    
+      <!-- Terceira coluna - NeoFeed -->
+      <div class="column">
+        <h2>NeoFeed</h2>
+        <div class="image-container">
+          <a href="/siteseconomia/site6.html"><img src="images/c.png" alt="NeoFeed"></a>
+          <a href="/siteseconomia/site6.html"><div class="image-caption">XP anuncia distribuição bilionária de capital após trimestre com lucro e receita recordes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="column">
+          <div class="noticia-economia">
+              <img src="images/clt.png" alt="Notícia 1">
+              <div class="news-text">
+                  <h3>13º salário: por que a 2ª parcela é menor? Entenda a cobrança do IR
+                  </h3>
+                
+              </div>
+          </div>
+
+          <hr>
+          <div class="noticia-economia">
+              <img src="images/bit.png" alt="Notícia 2">
+              <div class="news-text">
+                  <h3>Bitcoin avança, mirando US$ 100 mil pós-Trump, e impulsionado por ETF de opções
+                  </h3>
+              </div>
+          </div>
+          <hr>
+          <div class="noticia-economia">
+              <img src="images/mulher.png" alt="Notícia 3">
+              <div class="news-text">
+                  <h3>Desemprego entre mulheres negras é o dobro de homens não negros, diz levantamento</h3>
+              </div>
+          </div>
+      </div>
+ 
+      <div class="column">
+          <div class="noticia-economia">
+              <img src="images/natal.png" alt="Notícia 4">
+              <div class="news-text">
+                  <h3>Cesta de Natal: preços devem ficar 9% mais caros neste ano, diz pesquisa; veja lista
+                  </h3>
+                
+              </div>
+          </div>
+          <hr>
+          <div class="noticia-economia">
+              <img src="images/enem.png" alt="Notícia 5">
+              <div class="news-text">
+                  <h3>"Enem dos Concursos": veja novo cronograma do CNU após adiamento
+                  </h3>
+              </div>
+          </div>
+          <hr>
+          <div class="noticia-economia">
+              <img src="images/lula.png" alt="Notícia 6">
+              <div class="news-text">
+                  <h3>Habitação urbana, tecnologia nuclear e agro: veja os 37 acordos assinados entre Brasil e China</h3>
+              </div>
+          </div>
+      </div>
+      
+      <div class="column">
+          <div class="noticia-economia">
+              <img src="images/x1.png" alt="Notícia 7">
+              <div class="news-text">
+                  <h3>xAI, de Elon Musk, capta US$ 5 bilhões e já vale US$ 50 bilhões</h3>
+              </div>
+          </div>
+          <hr>
+          <div class="noticia-economia">
+              <img src="images/chrome.png" alt="Notícia 8">
+              <div class="news-text">
+                  <h3>A vida sem o Chrome: Google pode ser forçado a vender navegador de internet</h3>
+              </div>
+          </div>
+          <hr>
+          <div class="noticia-economia">
+              <img src="images/pix.png" alt="Notícia 9">
+              <div class="news-text">
+                  <h3>Bemobi compra instituição de pagamento de olho em novos recursos do PIX</h3>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+<br>
+    <h1 class="gallery-title">Escolha seu Time</h1>
+
+    <div class="container-escudos">
+        <div class="grid-container">
+          <div class="grid-item"><a href="https://www.flamengo.com.br"><img src="images/escudos/Logo_Flamengo_crest_1980-2018.png" alt="Flamengo"></a></div>
+          <div class="grid-item"><a href="https://www.gremio.net"><img src="images/escudos/Gremio_logo.svg.png" alt="Grêmio"></a></div>
+          <div class="grid-item"><a href="https://www.saopaulofc.net"><img src="images/escudos/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" alt="São Paulo"></a></div>
+          <div class="grid-item"><a href="https://www.corinthians.com.br"><img src="images/escudos/corinthians.png" alt="Corinthians"></a></div>
+          <div class="grid-item"><a href="https://www.atleticomg.com.br"><img src="images/escudos/1200px-Atletico_mineiro_galo.png" alt="Atlético Mineiro"></a></div>
+          <div class="grid-item"><a href="https://www.santosfc.com.br"><img src="images/escudos/Santos_Logo.png" alt="Santos"></a></div>
+          <div class="grid-item"><a href="https://www.palmeiras.com.br"><img src="images/escudos/Palmeiras_logo.svg.png" alt="Palmeiras"></a></div>
+          <div class="grid-item"><a href="https://www.internacional.com.br"><img src="images/escudos/Escudo_do_Sport_Club_Internacional.svg.png" alt="Internacional"></a></div>
+          <div class="grid-item"><a href="https://www.cruzeiro.com.br"><img src="images/escudos/Cruzeiro_Esporte_Clube_(logo).svg.png" alt="Cruzeiro"></a></div>
+          <div class="grid-item"><a href="https://www.fluminense.com.br"><img src="images/escudos/FFC_crest.svg.png" alt="Fluminense"></a></div>
+          <div class="grid-item"><a href="https://www.botafogo.com.br"><img src="images/escudos/Escudo_Botafogo.png" alt="Botafogo"></a></div>
+          <div class="grid-item"><a href="https://www.crb.com.br"><img src="images/escudos/CRB_logo.svg.png" alt="CRB"></a></div>
+          <div class="grid-item"><a href="https://www.coritiba.com.br"><img src="images/escudos/Coritiba_FBC_(2011)_-_PR.svg.png" alt="Coritiba"></a></div>
+          <div class="grid-item"><a href="https://www.vitoria.com.br"><img src="images/escudos/Esporte_Clube_Vitória_logo.png" alt="Vitória"></a></div>
+        </div>
+        
+      <!-- Área de vídeos -->
+    <div class="video-container">
+        <video controls width="100%">
+          <source src="https://www.youtube.com/watch?v=okD5Q9HeUIw" >
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+        <video controls width="100%">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+      </div>
+    </div>
+    <!-- Últimas Notícias -->
+ <!-- Ultimas Noticias -->
+    
+ <div class="main-container">
+  <section class="latest-news">
+      <h2>Últimas Notícias</h2>
+      <div class="ultimas-noticias">
+          <img src="images/federal.png" alt="Notícia 1">
+          <div class="news-info">
+              <h3>IR 2024: Receita abre consulta ao lote residual da restituição nesta sexta (22)</h3>
+              <p class="time"><i class="fas fa-clock"></i> 10:30 AM</p>
+          </div>
+      </div>
+      <div class="ultimas-noticias">
+          <img src="images/repu.png" alt="Notícia 2">
+          <div class="news-info">
+              <h3>CMO acelera negociações para aprovar Orçamento antes do recesso parlamentar</h3>
+              <p class="time"><i class="fas fa-clock"></i> 11:15 AM</p>
+             
+          </div>
+      </div>
+      <div class="ultimas-noticias">
+          <img src="images/fazen.png" alt="Notícia 3">
+          <div class="news-info">
+              <h3>Porto de Itaqui terá investimento de RS 1,1 bilhão na ampliação de terminal de grãos</h3>
+              <p class="time"><i class="fas fa-clock"></i> 12:00 PM</p>
+              
+          </div>
+      </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 News Flash. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
