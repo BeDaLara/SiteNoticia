@@ -305,224 +305,68 @@
 	color: #666;
   }
   
-  /* Recent News */
-/* Recent News Section */
-.recent-news .section-title {
-	font-size: 2rem;
-	font-weight: 600;
-	color: #333;
-	margin-bottom: 30px;
-  }
-  
-  .noticia-esporte {
-	background-color: white;
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
-  
-  .noticia-esporte:hover {
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-	transform: translateY(-5px);
-  }
-  
-  /* Author Info Section */
-  .author-info {
-	display: flex;
-	align-items: center;
-	margin-bottom: 15px;
-  }
-  
-  .author-photo {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	object-fit: cover;
-  }
-  
-  .author-details {
-	margin-left: 15px;
-  }
-  
-  .author-name {
-	font-weight: 600;
-	font-size: 1rem;
-	color: #333;
-  }
-  
-  .author-role {
-	font-size: 0.9rem;
-	color: #777;
-  }
-  
-  /* Title and Link Styling */
-  .noticia-esporte h4 {
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: #333;
-	margin-top: 10px;
-  }
-  
-  .noticia-esporte h4 a {
-	text-decoration: none;
-	color: #ff00aa;
-	transition: color 0.3s ease;
-  }
-  
-  .noticia-esporte h4 a:hover {
-	color: #0056b3;
-  }
-  
-  /* Description Styling */
-  .noticia-esporte p {
-	font-size: 1rem;
-	color: #555;
-	line-height: 1.5;
-	margin-top: 10px;
-  }
-  
-  /* Carousel Controls */
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-	background-color: #ff009d; /* Blue color for arrows */
-  }
-  
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
-	.noticia-esporte {
-	  padding: 15px;
-	}
-  
-	.author-photo {
-	  width: 40px;
-	  height: 40px;
-	}
-  
-	.author-name {
-	  font-size: 0.9rem;
-	}
-  
-	.author-role {
-	  font-size: 0.8rem;
-	}
-  
-	.noticia-esporte h4 {
-	  font-size: 1rem;
-	}
-  
-	.noticia-esporte p {
-	  font-size: 0.9rem;
-	}
-  }
- 
+ /* Ajustando o footer */
+.footer {
+    background-color: #343a40; /* Cor de fundo escuro */
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-/* Estilos gerais da galeria */
-.photo-gallery {
-	margin: 40px auto;
-	padding: 0;
-	max-width: 1200px; /* Largura máxima da galeria */
-  }
-  
-  .gallery-title {
-	font-size: 2rem;
-	text-align: center;
-	font-weight: bold;
-	color: #333;
-	margin-bottom: 20px; /* Menor espaçamento abaixo do título */
-  }
-  
-  /* Configuração do Grid (sem separação) */
-  .photo-gallery {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colunas com largura mínima de 150px */
-	grid-gap: 0; /* Remove o espaço entre as imagens */
-  }
-  
-  /* Estilo para cada item da foto */
-  .photo-item {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	transition: transform 0.3s ease;
-  }
-  
-/* Estilos gerais da galeria */
-.photo-gallery {
-	margin: 40px auto;
-	padding: 0;
-	max-width: 1200px; /* Largura máxima da galeria */
-  }
-  
-  .gallery-title {
-	font-size: 2rem;
-	text-align: center;
-	font-weight: bold;
-	color: #333;
-	margin-bottom: 20px; /* Menor espaçamento abaixo do título */
-  }
-  
-  /* Configuração do Grid (sem separação) */
-  .photo-gallery {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colunas com largura mínima de 150px */
-	grid-gap: 0; /* Remove o espaço entre as imagens */
-  }
-  
-  /* Estilo para cada item da foto */
-  .photo-item {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	transition: transform 0.3s ease;
-  }
-  
-  /* Estilo das imagens dentro dos itens */
-  .photo-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-	border-radius: 0; /* Sem bordas arredondadas, quinas retas */
-	filter: blur(0); /* Todas as imagens começam nítidas */
-	transition: filter 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Efeito de desfocar as imagens que não estão sob o mouse */
-  .photo-gallery .photo-item img:not(:hover) {
-	filter: blur(0px); /* As imagens não estão com o mouse, ficam desfocadas */
-	transform: scale(1); /* As imagens desfocadas permanecem do tamanho normal */
-  }
-  
-  /* A imagem sob o mouse permanece nítida */
-  .photo-gallery .photo-item:hover img {
-	filter: blur(0); /* A imagem sob o mouse continua nítida */
-	transform: scale(1.1); /* Aumenta a imagem quando o mouse está sobre ela */
-  }
-  
-  /* Responsividade para telas menores */
-  @media (max-width: 768px) {
-	.gallery-title {
-	  font-size: 1.6rem;
-	}
-  
-	.photo-gallery {
-	  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Menor largura mínima nas telas menores */
-	}
-  }
-  
-  
-  /* Footer */
-  .footer {
-	padding: 30px 0;
-	background-color: #343a40;
-  }
-  
-  .footer p {
-	color: #fff;
-	font-size: 1rem;
-  }
+/* Logo no footer - menor */
+.footer-logo {
+    width: 80px; /* Logo menor */
+}
+
+/* Redes Sociais ao lado da logo */
+.footer .fab {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer .fab:hover {
+    color: #f8c31c; /* Cor ao passar o mouse */
+}
+
+/* Links rápidos à direita */
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #f8c31c; /* Altere a cor ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 70px; /* Logo ainda menor em telas menores */
+    }
+
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-md-4, .footer .col-md-6 {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+
+
   /* Hero Section */
 .hero-section {
 	position: relative;
@@ -618,7 +462,7 @@
   }
   
   /* Legenda dentro da imagem */
-  .image-caption {
+  .image-caption-economia {
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
@@ -629,6 +473,13 @@
 	padding: 10px;
 	border-radius: 5px;
 	max-width: 90%; /* Garante que o texto não ultrapasse o limite da imagem */
+  }
+  .image-economia{
+	color: white;
+	text-decoration: none;
+  }
+  .image-economia:hover{
+	text-decoration: none;
   }
   
   /* Estilo para o container da grade de notícias */
@@ -706,9 +557,6 @@
 	
 }
 
-
-
-
 .main-container {
     width: 70%;
     max-width: 1200px;
@@ -723,11 +571,11 @@
     font-size: 38px;
     text-align:left;
     margin-bottom: 20px;
-    color: #ff0000;
+    color: #c21515;
 }
 
 .ultimas-noticias {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #ddd;
@@ -772,8 +620,8 @@
 
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-top: 20px;
+   margin-right: 30px;
 }
 
 th, td {
@@ -798,3 +646,9 @@ h1 {
 }
 
 
+  /* Estilo para o carrossel */
+  .carousel-item img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
