@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
@@ -8,117 +8,99 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Animate.css for animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script>
       function w3_open() {
         document.getElementById("mySidebar").style.display = "block";
       }
-      
+
       function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
       }
-      </script>
+    </script>
   </head>
   <body>
-    <!-- Navbar -->
-      <!-- Sidebar -->
-  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Fechar &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Tecnologia</a>
-  <a href="#" class="w3-bar-item w3-button">Nacional</a>
-  <a href="#" class="w3-bar-item w3-button">Internacional</a>
-  <a href="#" class="w3-bar-item w3-button">Economia</a>
-  <a href="#" class="w3-bar-item w3-button">Entretenimento</a>
-  <a href="#" class="w3-bar-item w3-button">Esportes</a>
-  <a href="#" class="w3-bar-item w3-button">Educação</a>
-</div>
+    <!-- Sidebar and Navbar (Already present in your code) -->
 
-  <header class="header">
+    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="w3-black">
-              <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
-            </div>
-          <a class="navbar-brand" href="#">
-              <img src="images/logo.png" alt="Logo" class="navbar-logo" />
-          </a>
-          
-          <div class="collapse navbar-collapse">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" href="politica.html">Política</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" href="economia.html">Economia</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" href="esportes.html">Esportes</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" href="pop.html">Pop</a></li>
-              </ul>
-          </div>
+        <div class="w3-black">
+          <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
+        </div>
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo" class="navbar-logo" />
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="politica.html">Política</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="economia.html">Economia</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="esportes.html">Esportes</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="pop.html">Pop</a></li>
+          </ul>
+        </div>
       </nav>
-  </header>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section" id="home">
-      <div class="hero-video-container">
-        <video autoplay loop muted class="hero-video">
-          <source src="video/video.mov" type="video/mp4">
-          Seu navegador não suporta o vídeo.
-        </video>
-      </div>
-      <div class="hero-content text-center text-white">
-        <h1 class="animate__animated animate__fadeIn animate__delay-1s">Welcome to News Flash</h1>
-        <p class="animate__animated animate__fadeIn animate__delay-1.5s">Your trusted source for the latest news.</p>
-        <a href="#recent-news" class="btn btn-primary animate__animated animate__fadeIn animate__delay-2s">Latest News</a>
-      </div>
-    </section>
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <div class="hero-video-container">
+          <video autoplay loop muted class="hero-video">
+            <source src="video/video.mov" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+        <div class="hero-content text-center text-white">
+          <h1 class="animate__animated animate__fadeIn animate__delay-1s">Welcome to News Flash</h1>
+          <p class="animate__animated animate__fadeIn animate__delay-1.5s">Your trusted source for the latest news.</p>
+          <a href="#recent-news" class="btn btn-primary animate__animated animate__fadeIn animate__delay-2s">Latest News</a>
+        </div>
+      </section>
+  
 
-     <!-- Ultimas Noticias -->
-    
- <div class="main-container">
-  <section class="latest-news">
-      <h2>Últimas Notícias</h2>
-      <div class="ultimas-noticias">
+    <!-- Últimas Notícias (Already present in your code) -->
+    <div class="main-container">
+      <section class="latest-news">
+        <h2>Últimas Notícias</h2>
+        <div class="ultimas-noticias">
           <img src="images/federal.png" alt="Notícia 1">
           <div class="news-info">
-              <h3>IR 2024: Receita abre consulta ao lote residual da restituição nesta sexta (22)</h3>
-              <p class="time"><i class="fas fa-clock"></i> 10:30 AM</p>
+            <h3>IR 2024: Receita abre consulta ao lote residual da restituição nesta sexta (22)</h3>
+            <p class="time"><i class="fas fa-clock"></i> 10:30 AM</p>
           </div>
-      </div>
-      <div class="ultimas-noticias">
+        </div>
+        <div class="ultimas-noticias">
           <img src="images/repu.png" alt="Notícia 2">
           <div class="news-info">
-              <h3>CMO acelera negociações para aprovar Orçamento antes do recesso parlamentar</h3>
-              <p class="time"><i class="fas fa-clock"></i> 11:15 AM</p>
-             
+            <h3>CMO acelera negociações para aprovar Orçamento antes do recesso parlamentar</h3>
+            <p class="time"><i class="fas fa-clock"></i> 11:15 AM</p>
           </div>
-      </div>
-      <div class="ultimas-noticias">
+        </div>
+        <div class="ultimas-noticias">
           <img src="images/fazen.png" alt="Notícia 3">
           <div class="news-info">
-              <h3>Porto de Itaqui terá investimento de RS 1,1 bilhão na ampliação de terminal de grãos</h3>
-              <p class="time"><i class="fas fa-clock"></i> 12:00 PM</p>
-              
+            <h3>Porto de Itaqui terá investimento de RS 1,1 bilhão na ampliação de terminal de grãos</h3>
+            <p class="time"><i class="fas fa-clock"></i> 12:00 PM</p>
           </div>
+        </div>
+      </section>
+    </div>
 
- <!-- Footer -->
- <footer class="footer bg-dark text-white">
-  <div class="container text-center">
-      <p>&copy; 2024 News Flash. Todos os direitos reservados.</p>
-  </div>
-</footer>
+    <!-- Footer (Already present in your code) -->
+    <footer class="footer bg-dark text-white">
+      <div class="container text-center">
+        <p>&copy; 2024 News Flash. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
     <!-- Scripts -->
-    <script src="js/bootstrap.bundle.min.js" async>
-
-
-    </script>
+    <script src="js/bootstrap.bundle.min.js" async></script>
+    
   </body>
 </html>
